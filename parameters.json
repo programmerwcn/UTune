@@ -1,0 +1,385 @@
+{
+    "condition_max_num": 3,
+    "tables_id": {
+        "customer": 1,
+        "lineitem": 2,
+        "nation": 3,
+        "orders": 4,
+        "part": 5,
+        "partsupp": 6,
+        "region": 7,
+        "supplier": 8
+    },
+    "columns_id": {
+        "customer.c_acctbal": 1,
+        "customer.c_comment": 2,
+        "customer.c_phone": 3,
+        "customer.c_mktsegment": 4,
+        "customer.c_custkey": 5,
+        "customer.c_address": 6,
+        "customer.c_name": 7,
+        "customer.c_nationkey": 8,
+        "lineitem.l_returnflag": 9,
+        "lineitem.l_orderkey": 10,
+        "lineitem.l_comment": 11,
+        "lineitem.l_linenumber": 12,
+        "lineitem.l_discount": 13,
+        "lineitem.l_suppkey": 14,
+        "lineitem.l_shipinstruct": 15,
+        "lineitem.l_tax": 16,
+        "lineitem.l_extendedprice": 17,
+        "lineitem.l_receiptdate": 18,
+        "lineitem.l_quantity": 19,
+        "lineitem.l_shipmode": 20,
+        "lineitem.l_linestatus": 21,
+        "lineitem.l_commitdate": 22,
+        "lineitem.l_partkey": 23,
+        "lineitem.l_shipdate": 24,
+        "nation.n_nationkey": 25,
+        "nation.n_regionkey": 26,
+        "nation.n_comment": 27,
+        "nation.n_name": 28,
+        "orders.o_totalprice": 29,
+        "orders.o_orderkey": 30,
+        "orders.o_clerk": 31,
+        "orders.o_custkey": 32,
+        "orders.o_shippriority": 33,
+        "orders.o_orderpriority": 34,
+        "orders.o_orderdate": 35,
+        "orders.o_orderstatus": 36,
+        "orders.o_comment": 37,
+        "part.p_mfgr": 38,
+        "part.p_type": 39,
+        "part.p_comment": 40,
+        "part.p_retailprice": 41,
+        "part.p_brand": 42,
+        "part.p_container": 43,
+        "part.p_size": 44,
+        "part.p_name": 45,
+        "part.p_partkey": 46,
+        "partsupp.ps_availqty": 47,
+        "partsupp.ps_suppkey": 48,
+        "partsupp.ps_comment": 49,
+        "partsupp.ps_supplycost": 50,
+        "partsupp.ps_partkey": 51,
+        "region.r_comment": 52,
+        "region.r_regionkey": 53,
+        "region.r_name": 54,
+        "supplier.s_nationkey": 55,
+        "supplier.s_acctbal": 56,
+        "supplier.s_name": 57,
+        "supplier.s_phone": 58,
+        "supplier.s_suppkey": 59,
+        "supplier.s_address": 60,
+        "supplier.s_comment": 61
+    },
+    "physic_ops_id": {
+        "Limit": 1,
+        "Aggregate": 2,
+        "Gather Merge": 3,
+        "Sort": 4,
+        "Seq Scan": 5,
+        "Hash Join": 6,
+        "Gather": 7,
+        "Hash": 8,
+        "Nested Loop": 9,
+        "Index Scan": 10,
+        "Bitmap Heap Scan": 11,
+        "BitmapAnd": 12,
+        "Bitmap Index Scan": 13,
+        "Index Only Scan": 14,
+        "Merge Join": 15,
+        "Materialize": 16
+    },
+    "column_total_num": 61,
+    "table_total_num": 8,
+    "physic_op_total_num": 16,
+    "condition_op_dim": 573,
+    "condition_word_dim": 500,
+    "compare_ops_id": {
+        ">=": 1,
+        "<=": 2,
+        ">": 3,
+        "<": 4,
+        "=": 5,
+        "!=": 6,
+        "~~": 7,
+        "!~~": 8
+    },
+    "bool_ops_id": {
+        "AND": 1,
+        "OR": 2,
+        "NOT": 3
+    },
+    "bool_ops_total_num": 3,
+    "compare_ops_total_num": 8,
+    "schema": {
+        "customer": {
+            "c_acctbal": "numeric",
+            "c_comment": "character varying",
+            "c_phone": "character",
+            "c_mktsegment": "character",
+            "c_custkey": "integer",
+            "c_address": "character varying",
+            "c_name": "character varying",
+            "c_nationkey": "integer"
+        },
+        "lineitem": {
+            "l_returnflag": "character",
+            "l_orderkey": "integer",
+            "l_comment": "character varying",
+            "l_linenumber": "integer",
+            "l_discount": "numeric",
+            "l_suppkey": "integer",
+            "l_shipinstruct": "character",
+            "l_tax": "numeric",
+            "l_extendedprice": "numeric",
+            "l_receiptdate": "date",
+            "l_quantity": "numeric",
+            "l_shipmode": "character",
+            "l_linestatus": "character",
+            "l_commitdate": "date",
+            "l_partkey": "integer",
+            "l_shipdate": "date"
+        },
+        "nation": {
+            "n_nationkey": "integer",
+            "n_regionkey": "integer",
+            "n_comment": "character varying",
+            "n_name": "character"
+        },
+        "orders": {
+            "o_totalprice": "numeric",
+            "o_orderkey": "integer",
+            "o_clerk": "character",
+            "o_custkey": "integer",
+            "o_shippriority": "integer",
+            "o_orderpriority": "character",
+            "o_orderdate": "date",
+            "o_orderstatus": "character",
+            "o_comment": "character varying"
+        },
+        "part": {
+            "p_mfgr": "character",
+            "p_type": "character varying",
+            "p_comment": "character varying",
+            "p_retailprice": "numeric",
+            "p_brand": "character",
+            "p_container": "character",
+            "p_size": "integer",
+            "p_name": "character varying",
+            "p_partkey": "integer"
+        },
+        "partsupp": {
+            "ps_availqty": "integer",
+            "ps_suppkey": "integer",
+            "ps_comment": "character varying",
+            "ps_supplycost": "numeric",
+            "ps_partkey": "integer"
+        },
+        "region": {
+            "r_comment": "character varying",
+            "r_regionkey": "integer",
+            "r_name": "character"
+        },
+        "supplier": {
+            "s_nationkey": "integer",
+            "s_acctbal": "numeric",
+            "s_name": "character",
+            "s_phone": "character",
+            "s_suppkey": "integer",
+            "s_address": "character varying",
+            "s_comment": "character varying"
+        }
+    },
+    "min_max_info": {
+        "customer": {
+            "c_acctbal": {
+                "min": -999.99,
+                "max": 9999.99
+            },
+            "c_custkey": {
+                "min": 1,
+                "max": 1500000
+            },
+            "c_nationkey": {
+                "min": 0,
+                "max": 24
+            }
+        },
+        "lineitem": {
+            "l_orderkey": {
+                "min": 1,
+                "max": 60000000
+            },
+            "l_linenumber": {
+                "min": 1,
+                "max": 7
+            },
+            "l_discount": {
+                "min": 0.0,
+                "max": 0.1
+            },
+            "l_suppkey": {
+                "min": 1,
+                "max": 100000
+            },
+            "l_tax": {
+                "min": 0.0,
+                "max": 0.08
+            },
+            "l_extendedprice": {
+                "min": 900.91,
+                "max": 104949.5
+            },
+            "l_quantity": {
+                "min": 1.0,
+                "max": 50.0
+            },
+            "l_partkey": {
+                "min": 1,
+                "max": 2000000
+            }
+        },
+        "nation": {
+            "n_nationkey": {
+                "min": 0,
+                "max": 24
+            },
+            "n_regionkey": {
+                "min": 0,
+                "max": 4
+            }
+        },
+        "orders": {
+            "o_totalprice": {
+                "min": 838.05,
+                "max": 558822.56
+            },
+            "o_orderkey": {
+                "min": 1,
+                "max": 60000000
+            },
+            "o_custkey": {
+                "min": 1,
+                "max": 1499999
+            },
+            "o_shippriority": {
+                "min": 0,
+                "max": 0
+            }
+        },
+        "part": {
+            "p_retailprice": {
+                "min": 900.91,
+                "max": 2098.99
+            },
+            "p_size": {
+                "min": 1,
+                "max": 50
+            },
+            "p_partkey": {
+                "min": 1,
+                "max": 2000000
+            }
+        },
+        "partsupp": {
+            "ps_availqty": {
+                "min": 1,
+                "max": 9999
+            },
+            "ps_suppkey": {
+                "min": 1,
+                "max": 100000
+            },
+            "ps_supplycost": {
+                "min": 1.0,
+                "max": 1000.0
+            },
+            "ps_partkey": {
+                "min": 1,
+                "max": 2000000
+            }
+        },
+        "region": {
+            "r_regionkey": {
+                "min": 0,
+                "max": 4
+            }
+        },
+        "supplier": {
+            "s_nationkey": {
+                "min": 0,
+                "max": 24
+            },
+            "s_acctbal": {
+                "min": -999.92,
+                "max": 9999.93
+            },
+            "s_suppkey": {
+                "min": 1,
+                "max": 100000
+            }
+        }
+    },
+    "index_max_col_num": 2,
+    "classes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        0.9,
+        0.8,
+        0.7,
+        0.6,
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.1,
+        0.09,
+        0.08,
+        0.07,
+        0.06,
+        0.05,
+        0.04,
+        0.03,
+        0.02,
+        0.01
+    ],
+    "word2vec_model_path": 
+        "./word2vec_model.bin"
+    ,
+    "operator_model_types": [
+        "Index Scan",
+        "Seq Scan",
+        "Bitmap Heap Scan",
+        "Bitmap Index Scan",
+        "Index Only Scan"
+    ],
+    "table_row_info": {
+        "customer": 1500000,
+        "lineitem": 59986052,
+        "nation": 25,
+        "orders": 15000000,
+        "part": 2000000,
+        "partsupp": 8000000,
+        "region": 5,
+        "supplier": 100000
+    }
+}

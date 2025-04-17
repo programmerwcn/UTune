@@ -1,0 +1,7 @@
+{"postgresql":{
+    "database":"tpch",
+    "host":"localhost",
+    "port":"5434",
+    "user":"user",
+    "password":"password"
+}}
