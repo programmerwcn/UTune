@@ -6,7 +6,7 @@ class OperatorModel
 
 ### End-to-end index tuning process (index_selection.py)
 
-def index_selection_8 in index_selection.py: end-to-end index tuning process
+def index_selection_9 in index_selection.py: end-to-end index tuning process
 
 * Index Benefit Estimation (def cost_estimation_4)
   Estimate index benefit with operator-level model and uncertainty-aware correction
